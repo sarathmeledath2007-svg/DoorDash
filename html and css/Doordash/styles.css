@@ -1529,7 +1529,7 @@
 }
 
 .footer-section-width {
-    width: 11184px;
+    width: 1184px;
 }
 
 .footer-content {
@@ -2893,7 +2893,7 @@
     }
 
     .convenience-details{
-        padding-top: 62px !important;
+        padding-top: 60px !important;
     }
 
     .scroll-section-image img{
@@ -2902,6 +2902,40 @@
     }
 
     .scroll-button p{
-        margin-bottom: 0px;
+        margin-bottom: 1px;
+    }
+
+    .neighborhood-main{
+        height: 410px;
+    }
+
+    .top-one{
+        position: relative;
+        top: 0;
+    }
+
+    .top-one-last{
+        position: relative;
+        top: -1px;
+    }
+
+    .see-more-button{
+        margin-top: 1px;
+    }
+
+    .footer-content{
+        margin: 0px 12px;
+    }
+
+    .footer-content-section{
+
+    }
+
+    .app-icon{
+        margin-left: 400px;
+    }
+
+    .footer-last-section{
+        gap: 82px;
     }
 }
