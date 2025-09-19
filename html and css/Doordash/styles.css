@@ -2074,7 +2074,7 @@
         width: 100%;
         height: 501px;
         object-fit: cover;
-        object-position: center 0.8px;
+        object-position: center 0px;
     }
 
     .shop-groceries-tablet {
@@ -2642,7 +2642,7 @@
     }
 
     .business-partner {
-        padding-top: 79px !important;
+        padding-top: 0px !important;
     }
 
     .business-partner-content h2 {
@@ -2787,6 +2787,21 @@
 }
 
 @media screen and (min-width: 1184px) {
+
+    .pizza-section {
+        max-width: 1184px;
+        margin: 0 auto -56px auto;
+    }
+
+    .dashpass-section-width {
+        background-color: rgb(254, 241, 238);
+    }
+
+    .dashpass-section {
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+
     .ads {
         max-width: 1184px;
     }
@@ -2803,17 +2818,17 @@
         min-width: 360px;
     }
 
-    .ads-section-first{
+    .ads-section-first {
         transform: translateX(-7px);
         margin-top: 4px;
     }
 
-    .ads-section-second{
+    .ads-section-second {
         transform: translateX(-39px);
         margin-top: 4px;
     }
 
-    .ads-section-third{
+    .ads-section-third {
         transform: translateX(-71px);
         margin-top: 4px;
     }
@@ -2836,7 +2851,7 @@
         flex-direction: column;
     }
 
-    .first-details{
+    .first-details {
         max-width: 250px;
         text-align: center;
     }
@@ -2846,13 +2861,13 @@
         text-align: center;
     }
 
-    .details-discreption{
+    .details-discreption {
         text-align: center;
         margin-top: 8px;
         transform: translateX(-4px);
     }
 
-    .ads-second-details{
+    .ads-second-details {
         min-height: 194px;
         text-align: center;
         display: flex;
@@ -2860,17 +2875,17 @@
         align-items: center;
     }
 
-    .second-details{
+    .second-details {
         text-align: center;
         max-width: 250px;
     }
 
-    .details-heading{
+    .details-heading {
         text-align: center;
         margin-right: 8px;
     }
 
-    .ads-third-details{
+    .ads-third-details {
         min-height: 194px;
         text-align: center;
         display: flex;
@@ -2878,64 +2893,189 @@
         align-items: center;
     }
 
-    .third-details{
+    .third-details {
         text-align: center;
         max-width: 250px;
     }
 
-    .details-button{
+    .details-button {
         transform: translateX(-4px);
     }
 
-    .details-button span{
+    .details-button span {
         font-size: 18px;
         line-height: 22px;
     }
 
-    .convenience-details{
+    .convenience-details {
         padding-top: 60px !important;
+        max-width: 1184px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .scroll-section-image img{
+    .scroll-section-main {
+        background-color: rgb(254, 241, 238);
+    }
+
+    .scroll-section {
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+
+    .scroll-section-image img {
         min-width: 552px;
         min-height: 552px;
     }
 
-    .scroll-button p{
+    .scroll-button p {
         margin-bottom: 1px;
     }
 
-    .neighborhood-main{
+    .get-paid-section {
+        max-width: 1184px;
+        margin: 0 auto -55px auto;
+    }
+
+    .business-partner-main {
+        background-color: rgb(254, 241, 238);
+        padding-top: 79px !important;
+    }
+
+    .business-partner-section {
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+
+    .neighborhood-main {
         height: 410px;
     }
 
-    .top-one{
+    .top-one {
         position: relative;
         top: 0;
     }
 
-    .top-one-last{
+    .top-one-last {
         position: relative;
         top: -1px;
     }
 
-    .see-more-button{
+    .see-more-button {
         margin-top: 1px;
     }
 
-    .footer-content{
+    .footer-content {
         margin: 0px 12px;
     }
 
-    .footer-content-section{
+    .footer-content-section {}
 
-    }
-
-    .app-icon{
+    .app-icon {
         margin-left: 400px;
     }
 
-    .footer-last-section{
+    .footer-last-section {
         gap: 82px;
+    }
+
+    .social-media {
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .delivery-heading h1 {
+        transform: translateY(0px);
+    }
+
+    .search-icon{
+        margin-right: 15.6px;
+    }
+
+    .search-bar{
+        margin-right: 63.4px;
+    }
+
+    .pizza-section {
+        transform: translateX(14.2px);
+    }
+
+    .pizza-images img {
+        width: 96%;
+    }
+
+    .convenience-details {
+        transform: translateX(14.3px);
+    }
+
+    .convenience-image img {
+        width: 96%;
+    }
+
+    .get-paid-section {
+        transform: translateX(14.3px);
+    }
+
+    .get-paid-image img {
+        width: 96%;
+    }
+
+    .business-partner-content{
+        width: 400px;
+    }
+
+    .business-partner-main {
+        padding-top: 79px !important;
+    }
+
+    .business-partner {
+        transform: translateX(-20px);
+    }
+
+    .business-partner-image img {
+        width: 724px;
+    }
+
+    .business-para{
+        max-width: 100%;
+    }
+
+    .business-partner-button{
+        width: 400px;
+    }
+
+    .footer-content{
+        transform: translateX(-7.9px);
+    }
+
+    .footer-heading{
+        margin-bottom: 7px;
+    }
+
+    .know-us h2{
+        margin-bottom: 8.5px;
+        position: relative;
+        top: 0.5px;
+    }
+
+    .help-you h2{
+        margin-bottom: 9px;
+        position: relative;
+        top: 0.8px;
+    }
+
+    .do-business h2{
+        margin-bottom: 9px;
+        position: relative;
+        top: 0.8px;
+    }
+
+    .app-icon{
+        transform: translateY(1px);
+    }
+
+    .terms-service{
+        margin-bottom: 4px;
     }
 }
