@@ -1480,6 +1480,10 @@
 
 /* footer section */
 
+.footer{
+    overflow: hidden;
+}
+
 .footer-section {
     width: 100vw;
     background-color: #191919ff;
