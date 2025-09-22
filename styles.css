@@ -1,0 +1,2879 @@
+@font-face {
+    font-family: BBold;
+    src: url(fonts/TTNorms-Bold.woff2);
+}
+
+@font-face {
+    font-family: ExtraBold;
+    src: url(fonts/TTNorms-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: MMedium;
+    src: url(fonts/TTNorms-Medium.woff2);
+}
+
+@font-face {
+    font-family: RRegular;
+    src: url(fonts/TTNorms-Regular.woff2);
+}
+
+
+/* /mobile screen */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+/* Header section*/
+
+.header {
+    margin-top: 16px;
+}
+
+.header-top {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 8px;
+    padding: 8px;
+
+}
+
+.first-logo {
+    border: 1px solid #f1f1f1ff;
+    border-radius: 12px;
+}
+
+.first-logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.first-line {
+    color: #191919ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    font-family: BBold;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.second-line {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: MMedium;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0;
+}
+
+.third-line {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 3px;
+}
+
+.rating-star {
+    margin: 0 -1px;
+    position: relative;
+    top: 1px;
+}
+
+.m-ratings {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: MMedium;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 3px;
+    padding: 0;
+}
+
+.side-container-right {
+    align-self: center;
+}
+
+.button-head {
+    position: relative;
+    max-width: 100;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #eb1700ff;
+    border: none;
+    color: #ffffffff;
+}
+
+.button-open {
+    color: #ffffffff;
+    font-family: BBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin: 0;
+    padding: 0 12px;
+}
+
+/* banner section */
+
+.banner {
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+    height: 550px;
+    padding: 0 8px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-logo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo-main {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.white-banner {
+    margin-left: 8px !important;
+}
+
+.delivery-section {
+    justify-content: center;
+    text-align: center;
+}
+
+.delivery-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.delivery-heading h1 {
+    color: #ffffffff;
+    font-family: TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 28px;
+    font-weight: 900;
+    font-size: 32px;
+    font-feature-settings: "";
+}
+
+.login-section {
+    margin-top: 16px;
+    top: 100px;
+}
+
+.login-button-main {
+    position: absolute;
+    top: 95px;
+    left: 0px;
+    right: 0px;
+}
+
+.login-button {
+    margin-top: 16px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+    padding-left: 16px;
+    gap: 8px;
+}
+
+.login {
+    position: relative;
+    max-width: 100%;
+    padding: 0 12px;
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffffff;
+    color: #191919ff;
+}
+
+.login span {
+    font-family: BBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+#sign-none {
+    display: none;
+}
+
+.open-app {
+    position: relative;
+    max-width: 100%;
+    padding: 0 12px;
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.open-app span {
+    font-family: BBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-section {
+    font-family: MMedium;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    color: #191919ff;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    background-color: #ffffffff;
+    border-radius: 9999px;
+
+}
+
+.search-icon {
+    max-width: 100%;
+    margin-right: 12px;
+}
+
+.location-icon {
+    display: none;
+}
+
+.search-bar {
+    font-family: MMedium;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 500;
+    color: #606060ff;
+    background: inherit;
+    display: flex;
+    border: none;
+    outline: none;
+    margin-right: 6px;
+}
+
+.arrow-button {
+    background-color: #eb1700ff;
+    border-radius: 9999px;
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.login-location {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.login-location-button {
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffffff;
+    color: #191919ff;
+    padding: 0 12px;
+}
+
+.login-location-button img {
+    width: 16px;
+}
+
+
+
+.login-location-button span {
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    margin-left: 4px !important;
+}
+
+#second-sign {
+    display: none;
+}
+
+#third-sign {
+    display: none;
+}
+
+/* ad section */
+
+.ad-app {
+    width: 100%;
+    margin: 0 auto;
+    flex: 1 0 auto;
+}
+
+.ad-app-section {
+    margin: 20px 20px 0px;
+}
+
+.ad-app-content {
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+    padding: 20px 20px 20px 20px;
+    background-color: #f7f7f7ff;
+}
+
+.ad-app-content-section {
+    display: flex;
+    text-align: left;
+}
+
+.doordash-logo {
+
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    padding: 8px;
+    border: 1px solid #f1f1f1ff !important;
+    background-color: #ffffffff;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.ad-app-line {
+    max-width: 100%;
+    display: block;
+}
+
+.ad-first-line {
+    color: #191919ff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: BBold;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.ad-second-line {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: MMedium;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 4px !important;
+    margin-top: 2px !important;
+    padding: 0;
+}
+
+.ad-third-line {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 3px;
+}
+
+.all-stars-second {
+    margin: 0 -1px;
+    position: relative;
+    top: 1px;
+}
+
+.ad-third-line-m {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    font-family: MMedium;
+    letter-spacing: -0.01px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 7px !important;
+    margin-top: 2px !important;
+    padding: 0;
+}
+
+.continue-app {
+    margin-top: 15px !important;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: none;
+    text-align: center;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.continue-app span {
+    color: #ffffffff;
+    font-family: BBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    border: none;
+    padding-bottom: 1px;
+}
+
+/* /business ad section */
+
+.ads {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 8px;
+    margin: 40px 0;
+}
+
+.ads-section {
+    display: flex;
+    padding: 16px;
+}
+
+.ads-images {
+    margin-right: 32px;
+
+
+}
+
+.ads-images img {
+    height: 88px;
+    width: 88px;
+}
+
+.details-heading {
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    text-transform: none;
+    display: block;
+}
+
+.details-discreption {
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    text-align: left;
+    display: block;
+
+}
+
+.details-button {
+    border: 0;
+    padding: 0;
+    margin: 12px 0 0 0;
+    cursor: point;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.details-button span {
+    color: #eb1700ff;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-right: 4px;
+}
+
+.details-button img {
+    margin-bottom: 1px;
+}
+
+/* details of doordash */
+
+.pizza-section {
+    margin-bottom: -300px;
+    padding: 20px;
+    max-width: 90%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pizza-images {
+    width: 100%;
+    max-width: 695.02px;
+}
+
+.pizza-images img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.pizza-image-tablet {
+    display: none;
+}
+
+.pizza-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pizza-crave {
+    max-width: 90%;
+    margin-top: 24px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.favorite-restaurants {
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.favorite-restaurants-description {
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.find-restaurants {
+    margin-top: 20px;
+}
+
+.find-restaurants-button {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.find-restaurants-button span {
+    color: currentcolor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+}
+
+.dashpass-section {
+    background-color: rgb(254, 241, 238);
+    padding-top: 320px !important;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 90%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dashpass-image {
+    width: 100%;
+}
+
+.dashpass-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.shop-groceries-tablet {
+    display: none;
+}
+
+.dashpass-content h2 {
+    max-width: 90%;
+    margin-top: 24.3px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.dashpass-content p {
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.get-dashpass {
+    margin-top: 20px;
+}
+
+.get-dashpass-button {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.get-dashpass-button-text {
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+}
+
+/* grocerie section  */
+
+.groceries-section {
+    background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png) center center / cover;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.groceries-background {
+    background-color: rgba(30, 30, 30, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.groceries-content-section {
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 550px;
+    color: #ffffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.groceries-content-section h2 {
+    text-align: center;
+    color: white;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2)0px 2px 8px);
+    max-width: 90%;
+    margin-top: 20px;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.groceries-discreption {
+    font-family: BBold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 10px;
+}
+
+.groceries-content-section p {
+    margin-top: 10px;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.groceries-content-button {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.shop-groceries {
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+}
+
+/* convenience store  */
+
+.convenience-section {
+    width: 100%;
+}
+
+.convenience-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 90%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.convenience-image {
+    width: 100%;
+    max-width: 695.02px;
+}
+
+.convenience-image-tablet {
+    display: none;
+}
+
+.convenience-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.convenience-details-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.convenience-details-section h2 {
+    max-width: 90%;
+    margin-top: 24px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.convenience-details-section p {
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.convenience-button {
+    margin-top: 20px;
+}
+
+.convenience-button button {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.convenience-button button span {
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+
+}
+
+/* scroll section */
+
+.scroll-heading {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(254, 241, 238);
+    padding: 40px 20px 20px 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.scroll-heading-content {
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+.scroll-section {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    background-color: rgb(254, 241, 238);
+}
+
+.scroll-section::-webkit-scrollbar {
+    display: none;
+}
+
+/* scroll content */
+
+.scroll-content {
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    min-width: 79.2%;
+    padding: 20px;
+    padding-right: 21px;
+    align-items: center;
+}
+
+.scroll-content:last-child {
+    margin-right: 5%;
+}
+
+
+.scroll-section-image {
+    width: 100%;
+}
+
+.scroll-image-tablet {
+    display: none;
+}
+
+.scroll-section-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center -18.7px;
+}
+
+.scroll-section-details {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-section-details h2 {
+    max-width: 88%;
+    margin-top: 24px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.scroll-para {
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-align: center;
+}
+
+.scroll-section-button {
+    margin-top: 20px;
+}
+
+.scroll-button {
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.scroll-button p {
+    padding: 0 12px;
+    width: 100%;
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.warning {
+    text-align: center;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+/* second last section */
+
+.opportunity-heading-section {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffffff;
+    padding: 40px 20px 20px 20px;
+    max-width: 100%;
+}
+
+.opportunity-heading {
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.get-paid-section {
+    max-width: 90%;
+    padding: 20px;
+    margin-bottom: -300px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.get-paid-image-tablet {
+    display: none;
+}
+
+.get-paid-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.get-paid-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.get-paid-content h2 {
+    text-align: left;
+    max-width: 90%;
+    margin-top: 24px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.get-paid-para {
+    text-align: left;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.get-paid {
+    margin-top: 20px;
+}
+
+.get-paid-button {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.get-paid-button-text {
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+}
+
+.business-partner-section {
+    width: 100%;
+
+}
+
+.business-partner {
+    background-color: rgb(254, 241, 238);
+    padding-top: 320px !important;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.business-partner-image {
+    width: 100%;
+}
+
+.business-partner-image-tablet {
+    display: none;
+}
+
+.business-partner-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.business-partner-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.business-partner-content h2 {
+    text-align: left;
+    max-width: 90%;
+    margin-top: 24px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.business-para {
+    text-align: left;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.business-partner-button {
+    margin-top: 20px;
+}
+
+.business-button {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+
+.business-button-text {
+    color: currentColor;
+    font-family: BBold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 12px;
+    opacity: 1;
+}
+
+/* last section */
+
+.neighborhood-section {
+    max-width: 100%;
+    padding: 24px 16px;
+}
+
+.neighborhood-section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.neighborhood-content-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.neighborhood-heading-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.neighborhood-sub-heading {
+    padding-bottom: 14px;
+    box-sizing: border-box;
+    width: 33.3%;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffffff;
+    border-bottom: 3px solid #f1f1f1ff;
+}
+
+.neighborhood-sub-heading:hover {
+    cursor: pointer;
+    background: #f7f7f7ff;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 3px 0 #191919ff;
+    font-family: BBold;
+    height: 40px;
+}
+
+.neighborhood-sub-heading span {
+    color: #606060ff;
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.neighborhood-sub-heading span:hover {
+    color: #191919ff;
+    font-family: BBold;
+    margin-bottom: -1px;
+}
+
+.top-cities {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.top-cities-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin-top: -3px;
+}
+
+.top-cities-column span {
+    color: #191919ff;
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.see-more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.see-more {
+    margin-right: 8px;
+    color: #191919ff;
+    font-family: BBold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.see-more-down-arrow {
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f1f1f1ff;
+    color: #191919ff;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section */
+
+.footer-section {
+    width: 100vw;
+    background-color: #191919ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section-width {
+    width: 1160px !important;
+    margin: 0 auto;
+}
+
+.footer-content {
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.footer-content-section {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex: 1 1 0%;
+}
+
+.footer-heading {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.footer-items {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.footer-first-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.footer-first-section span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-second-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.footer-second-section span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-third-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.footer-third-section span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-fourth-section {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.footer-fourth-section span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.app-icon-section {
+    flex-direction: column;
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.app-icon {
+    flex: 1 1 0%;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    color: inherit;
+}
+
+.app-store {
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-store {
+    padding: 2px 8px;
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.know-us-main {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+}
+
+.know-us {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.know-us h2 {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.know-us span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.help-you {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.help-you h2 {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.help-you span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.do-business {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.do-business h2 {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    font-family: MMedium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.do-business span {
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-last-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 32px;
+    width: 100%;
+}
+
+.terms-service {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.last-logo {
+    max-width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.terms-service span {
+    margin-left: 16px !important;
+    color: rgb(196, 196, 196);
+    font-family: MMedium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    display: block;
+}
+
+.language-selector {
+    padding: 12px;
+}
+
+.last-button {
+    font-family: MMedium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-weight: 400;
+    color: #191919ff;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    border: none;
+    background-color: #f1f1f1ff;
+    position: relative;
+}
+
+.button-global {
+    margin-right: 8px;
+}
+
+.last-button-arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 12px;
+    height: 24px;
+    max-height: 100%;
+    min-height: 8px;
+    bottom: 0px;
+    margin: auto 0px;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+    color: inherit;
+    height: 28px;
+}
+
+.x {
+    margin-left: 12px;
+}
+
+
+/* tablet screen */
+
+
+@media screen and (min-width: 768px) {
+
+    /* header section */
+
+    .header {
+        display: none;
+    }
+
+    /* banner */
+
+    .banner {
+        height: 650px;
+    }
+
+    .hero-logo {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        transform: translateY(-200px);
+    }
+
+    #login-none {
+        display: none;
+    }
+
+    #sign-none {
+        display: block;
+        font-size: 18px;
+        letter-spacing: -0.01px;
+    }
+
+    .login-button {
+        transform: translateY(-95px);
+    }
+
+    .login {
+        background-color: #eb1700ff;
+        color: #ffffffff;
+    }
+
+    .open-app {
+        background-color: #ffffffff;
+        color: #606060ff;
+        padding: 0 12px;
+    }
+
+    .delivery-heading h1 {
+        max-width: 350px;
+        letter-spacing: 0px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .login-section {
+        margin-top: 0;
+    }
+
+    .input-section {
+        padding: 8px 8px 8px 20px;
+    }
+
+    .search-icon-logo {
+        display: none;
+    }
+
+    .location-icon {
+        display: block;
+
+    }
+
+    .search-icon {
+        margin-right: 16px;
+    }
+
+    .search-bar {
+        margin-right: 63px;
+        margin-left: -2px;
+    }
+
+    #second-login {
+        display: none;
+    }
+
+    #second-sign {
+        display: block;
+    }
+
+    .login-location-none {
+        display: none;
+    }
+
+    .delivery-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* ad section */
+
+    .ad-app-section {
+        display: none;
+    }
+
+    /* business ad section */
+
+    .ads {
+        max-width: 486px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .ads-second {
+        margin: 32px 0;
+        padding: 8px 8px;
+    }
+
+    .ads-images {
+        margin-right: 64px;
+    }
+
+    .ads-images img {
+        width: 124px;
+        height: 124px;
+    }
+
+    .details-button span {
+        letter-spacing: -0.01px;
+    }
+
+    .details-button img {
+        margin-bottom: 0;
+    }
+
+    /*details of doordash*/
+
+    .pizza-section {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: -56px;
+        gap: 60px;
+    }
+
+    .pizza-images img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .pizza-image-tablet {
+        display: block;
+    }
+
+    .pizza-image-mobile {
+        display: none;
+    }
+
+    .pizza-content-main {
+        max-width: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .pizza-crave {
+        max-width: 90%;
+        margin-top: 24px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .favorite-restaurants {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .favorite-restaurants-description {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        width: 95%;
+    }
+
+    .find-restaurants {
+        margin-top: 30px;
+    }
+
+    .find-restaurants-button {
+        max-width: 100%;
+        min-height: 40px;
+    }
+
+    .find-restaurants-button span {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+
+    .dashpass-section {
+        padding-top: 80px !important;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .dashpass-image {
+        width: 100%;
+        height: 504px;
+
+    }
+
+    .dashpass-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .shop-groceries-tablet {
+        display: block;
+    }
+
+    .shop-groceries-mobile {
+        display: none;
+    }
+
+    .dashpass-content h2 {
+        max-width: 90%;
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        display: block;
+    }
+
+    .dashpass-content p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .get-dashpass {
+        margin-top: 30px;
+    }
+
+    .get-dashpass-button {
+        max-width: 100%;
+        min-height: 40px;
+    }
+
+    .get-dashpass-button-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /* grocerie section */
+
+    .groceries-section {
+        height: 600px;
+    }
+
+    .groceries-background {
+        justify-content: center;
+    }
+
+    .groceries-content-section h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    .groceries-discreption {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .groceries-content-section p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-top: 10;
+    }
+
+    .groceries-content-button {
+        margin-top: 30px;
+        min-height: 40px;
+    }
+
+    .shop-groceries {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        padding: 0 12px;
+    }
+
+    /* convenience store  */
+
+    .convenience-details {
+        padding-top: 60px !important;
+        margin-bottom: -36px;
+        padding: 20px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .convenience-image-tablet {
+        display: block;
+    }
+
+    .convenience-image-mobile {
+        display: none;
+    }
+
+    .convenience-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .convenience-details-section {
+        max-width: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .convenience-details-section h2 {
+        max-width: 90%;
+        margin-top: 24px;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+
+    .convenience-details-section p {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .convenience-button {
+        margin-top: 30px;
+    }
+
+    .convenience-button button {
+        min-height: 40px;
+        align-items: center;
+    }
+
+    .convenience-button button span {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    /* scroll section */
+
+    .scroll-heading {
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px 40px;
+        max-width: 100%;
+    }
+
+    .scroll-heading-content {
+        text-align: center;
+        max-width: 500px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    /* srcoll content */
+
+    .scroll-section {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .scroll-content:last-child {
+        margin-right: 0;
+    }
+
+    .scroll-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .scroll-section-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .scroll-image-tablet {
+        display: block;
+    }
+
+    .scroll-image-mobile {
+        display: none;
+    }
+
+    .scroll-section-image img {
+        position: relative;
+        inset: 0px;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .scroll-section-details h2 {
+        max-width: 94%;
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .scroll-para {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .scroll-section-button {
+        margin-top: 30px;
+    }
+
+    .scroll-button {
+        min-height: 40px;
+        align-items: center;
+    }
+
+    .scroll-button p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .warning {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* second last section */
+
+    .opportunity-heading-section {
+        padding: 60px 20px 40px;
+    }
+
+    .opportunity-heading {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        max-width: 500px;
+    }
+
+    .get-paid-section {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: -56px;
+        gap: 41px;
+    }
+
+
+    .get-paid-image-mobile {
+        display: none;
+    }
+
+    .get-paid-image-tablet {
+        display: block;
+    }
+
+    .get-paid-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .get-paid-content h2 {
+        max-width: 80%;
+        margin-top: 24px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .get-paid-para {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        max-width: 96%;
+    }
+
+    .get-paid {
+        margin-top: 30px;
+    }
+
+    .get-paid-button {
+        min-height: 40px;
+        align-items: center;
+    }
+
+    .get-paid-button-text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .business-partner {
+        padding-top: 80px !important;
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .business-partner-image-mobile {
+        display: none;
+    }
+
+    .business-partner-image-tablet {
+        display: block;
+    }
+
+    .business-partner-image {
+        height: 504px;
+    }
+
+    .business-partner-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center 0px;
+    }
+
+    .business-partner-content {
+        max-width: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .business-partner-content h2 {
+        max-width: 90%;
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .business-para {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .business-partner-button {
+        margin-top: 30px;
+    }
+
+    .business-button {
+        min-height: 40px;
+        align-items: center;
+        width: auto;
+    }
+
+    .business-button-text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    /* last section */
+
+    .neighborhood-section {
+        max-width: 1130px;
+        margin: 0 auto;
+        padding: 48px 0px 48px 0px;
+    }
+
+    .neighborhood-section-heading {
+        margin-bottom: 20px;
+    }
+
+    .neighborhood-sub-heading {
+        padding-bottom: 1px;
+    }
+
+    .neighborhood-sub-heading span:hover {
+        margin-bottom: 1px;
+    }
+
+    .see-more-button {
+        padding: 10px 0;
+    }
+
+    /* footer */
+
+    .footer-content-section {
+        text-align: left;
+    }
+
+    .footer-heading {
+        margin-bottom: 7.5px;
+    }
+
+    .footer-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .know-us-main {
+        flex: 1 1 0%;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .app-icon {
+        padding-top: 32px;
+    }
+
+    .footer-last-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 32px 0 32px;
+    }
+
+    .terms-service {
+        margin-top: 0;
+    }
+
+    .language-selector {
+        padding: 0 13px 0 12px;
+        height: 36px;
+    }
+
+    .last-button {
+        width: 150px;
+        margin-right: -1;
+    }
+
+    .button-global {
+        margin-right: 6px;
+    }
+
+    .last-english {
+        margin-left: 2px;
+    }
+
+    .social-media {
+        height: 36px;
+    }
+
+}
+
+
+/* media call at 769px */
+
+
+@media screen and (min-width: 769px) {
+
+    /* banner */
+
+    .hero-logo {
+        transform: translateY(-211px);
+    }
+
+    .delivery-heading {
+        width: 750px;
+        margin-bottom: 26px;
+        transform: translateY(3px);
+    }
+
+    .delivery-heading h1 {
+        font-size: 40px;
+        max-width: none;
+    }
+
+    .search-section {
+        margin-top: 4px;
+        transform: translateY(3px);
+    }
+}
+
+/* media call at 960px */
+
+@media screen and (min-width: 960px) {
+
+    /* banner */
+
+    .hero-logo {
+        transform: translateY(-205px);
+        gap: 12px;
+    }
+
+    .white-logo img {
+        width: 42px;
+        height: 24px;
+    }
+
+    .white-banner {
+        margin-left: 12px !important;
+    }
+
+    .white-banner span img {
+        width: 155px;
+        height: 18px;
+    }
+
+    .delivery-section {
+        margin-top: 6px;
+    }
+
+    .delivery-heading {
+        margin-bottom: 20px;
+        transform: translateY(0px);
+    }
+
+    .delivery-heading h1 {}
+
+    .search-section {
+        transform: translateY(0px);
+    }
+
+    .input-section {
+        margin-top: 6px;
+    }
+
+
+    #second-sign {
+        display: none;
+    }
+
+    #third-sign {
+        display: block;
+    }
+
+    /* details of doordash */
+
+    .pizza-section {
+        gap: 60px;
+    }
+
+    .favorite-restaurants-description {
+        width: 100%;
+    }
+
+    .dashpass-content {
+        width: 400px;
+    }
+
+    .dashpass-content h2 {
+        max-width: 85%;
+    }
+
+    .dashpass-content p {
+        max-width: 100%;
+    }
+
+    .get-dashpass {
+        width: 400px;
+    }
+
+    /* scroll content */
+
+    .scroll-section-details h2 {
+        max-width: 90%;
+    }
+
+    /* second last section */
+
+    .get-paid-section {
+        gap: 60px;
+        margin-bottom: -55px;
+    }
+
+    .get-paid-image {
+        width: 100%;
+        max-width: 695.02px;
+
+    }
+
+    .get-paid-content {
+        max-width: 400px;
+    }
+
+    .get-paid-para {
+        max-width: 99%;
+    }
+
+    .business-partner {
+        padding-top: 79px !important;
+    }
+
+    .business-partner-content h2 {
+        margin-top: 20px;
+    }
+
+    /* footer section */
+
+    .footer-content {
+        min-height: 900px;
+    }
+
+    .footer-second-content-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .footer-items {
+        transform: translateY(0px);
+    }
+
+    .know-us h2 {
+        margin-bottom: 8px;
+    }
+
+    .help-you h2 {
+        margin-bottom: 8px;
+    }
+
+    .do-business h2 {
+        margin-bottom: 8px;
+    }
+
+    .know-us-content {}
+
+    .app-icon {
+        align-items: end;
+    }
+
+}
+
+/* media call at 1024px */
+
+@media screen and (min-width: 1024px) {
+
+    /* banner */
+
+    .banner{
+        background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    }
+
+    /* footer */
+
+    .footer-content {
+        min-height: 896px !important;
+    }
+
+    .footer-last-section {      
+        padding: 30px 0 30px;
+    }
+
+    .language-selector {
+        padding: 0 26px 0 26px;
+    }
+
+    .last-button {
+        top: 2px;
+        right: 1px;
+    }
+
+    .last-english{
+        margin-left: 2.5px;
+    }
+
+    .social-media {
+        position: relative;
+        top: 2px;
+    }
+}
+
+/* media call at 1184px */
+
+@media screen and (min-width: 1184px) {
+
+    /* business ads section */
+
+    .ads {
+        max-width: 1104px;
+    }
+
+    .ads-second {
+        margin: 96px 0 72px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ads-section {
+        flex-direction: column;
+        width: 360px;
+        min-height: 420px;
+    }
+
+    .ads-section-first {
+        position: relative;
+        top: 4px;
+        left: 3px;
+    }
+
+    .ads-section-second {
+        position: relative;
+        top: 4px;
+    }
+
+    .ads-section-third {
+        position: relative;
+        top: 4px;
+        right: 3px;
+    }
+
+    .ads-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ads-images img {
+        height: 154px;
+        width: 154px;
+    }
+
+    .details-heading {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .details-discreption {
+        text-align: center;
+        margin-top: 8px !important;
+    }
+
+    .ads-details {
+        width: 250px;
+        height: 194px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 1.3px;
+    }
+
+    .first-details {
+        max-width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .details-button span {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* details of doordash */
+
+    .pizza-section {
+        max-width: 1184px;
+        margin-bottom: -56px !important;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .dashpass-section-width {
+        background-color: rgb(254, 241, 238);
+    }
+
+    .dashpass-section {
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+
+    /* convenience store */
+
+    .convenience-details {
+        max-width: 1184px;
+        margin: 0 auto;
+        margin-bottom: -36px !important;
+        justify-content: center;
+    }
+
+    /* scroll content */
+
+    .scroll-section-main {
+        background-color: rgb(254, 241, 238);
+    }
+
+    .scroll-section {
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+
+    /* second last section */
+
+    .get-paid-section {
+        max-width: 1184px;
+        margin: 0 auto;
+        margin-bottom: -56px !important;
+        justify-content: center;
+    }
+
+    .business-partner-section {
+        background-color: rgb(254, 241, 238);
+    }
+
+    .business-partner {
+        max-width: 1184px;
+        margin: 0 auto;
+        padding-top: 80px !important;
+    }
+
+    /* footer section */
+
+    .footer-section-width {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+}
